@@ -39,3 +39,11 @@ hostname -i
 ```
  docker inspect {CONTAINER_ID} | grep IPAddress
 ```
+
+# Curl
+
+### Comando para criar uma nova personalidade
+
+```
+curl -d "{\"nome\":\"Nome 1\", \"historia\":\"História 1\"}" -H "Content-Type: application/json" -X POST http://localhost:8000/api/personalidades
+```
