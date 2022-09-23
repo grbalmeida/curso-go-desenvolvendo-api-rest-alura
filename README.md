@@ -47,3 +47,9 @@ hostname -i
 ```
 curl -d "{\"nome\":\"Nome 1\", \"historia\":\"História 1\"}" -H "Content-Type: application/json" -X POST http://localhost:8000/api/personalidades
 ```
+
+### Comando para excluir uma personalidade
+
+```
+curl -X DELETE http://localhost:8000/api/personalidades/3
+```

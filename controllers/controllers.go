@@ -36,3 +36,11 @@ func CriaUmaNovaPersonalidade(w http.ResponseWriter, r *http.Request) {
 	database.DB.Create(&novaPersonalidade)
 	json.NewEncoder(w).Encode(novaPersonalidade)
 }
+
+func DeletaUmPersonalidade(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	id := vars["id"]
+	var personalidade models.Personalidade
+	database.DB.Delete(&personalidade, id)
+	json.NewEncoder(w).Encode(personalidade)
+}
