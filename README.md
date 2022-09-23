@@ -6,6 +6,12 @@
 go get -u github.com/gorilla/mux
 ```
 
+### Comando para instalar Gorilla Mux Handlers
+
+```
+go get github.com/gorilla/handlers
+```
+
 ### Comando para instalar ORM Gorm
 
 ```
