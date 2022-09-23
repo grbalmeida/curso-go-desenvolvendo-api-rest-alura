@@ -9,3 +9,17 @@ go get -u github.com/gorilla/mux
 ```
 docker-compose up
 ```
+
+### Comandos para acessar hostname do container postgres
+
+```
+docker-compose exec postgres sh
+```
+
+```
+hostname -i
+```
+
+```
+ docker inspect {CONTAINER_ID} | grep IPAddress
+```
