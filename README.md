@@ -48,6 +48,12 @@ hostname -i
 curl -d "{\"nome\":\"Nome 1\", \"historia\":\"História 1\"}" -H "Content-Type: application/json" -X POST http://localhost:8000/api/personalidades
 ```
 
+### Comando para atualizar uma personalidade
+
+```
+curl -d "{\"nome\": \"Pessoa 1 Atualizada\", \"historia\": \"Historia Atualizada\"}" -H "Content-Type: application/json" -X PUT http://localhost:8000/api/personalidades/16
+```
+
 ### Comando para excluir uma personalidade
 
 ```
